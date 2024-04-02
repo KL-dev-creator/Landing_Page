@@ -14,7 +14,6 @@
 }
 
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -64,6 +63,12 @@ a {
     flex-direction: row;
 }
 
+.heroleft   {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .heroheader {
     font-size: 48px;
     font-weight: bolder;
@@ -75,7 +80,9 @@ a {
     color: #E5E7EB;
 }
 
-
+.heroimage {
+    display: flex;
+}
 
 /* .herotext, .heroleft, img {
     width: 600px;
