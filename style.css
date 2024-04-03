@@ -8,10 +8,10 @@
 
 /* Just want to see the borders temporarily */
 
-* {
+/* * {
     border: 1px solid #ddd;
     border-radius: 16px;
-}
+} */
 
 
 body {
@@ -57,17 +57,19 @@ a {
 .herotext {
     background-color: #1f2937;
     display: flex;
-    padding: 16px, 200px;
+    padding: 100px 200px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
+    gap: 20px;
+
 }
 
 .heroleft   {
     display: flex;
     flex-direction: column;
+    gap: 16px;
 }
-
 
 .heroheader {
     font-size: 48px;
@@ -82,9 +84,23 @@ a {
 
 .heroimage {
     display: flex;
+    flex-wrap: wrap;
+    padding: 16px, 200px;
 }
 
-/* .herotext, .heroleft, img {
-    width: 600px;
-} */
+.heroimage, img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+button.signup    {
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: #3882F6;
+    color: #f9faf8;
+    font-weight: bold;
+}
+
+
 
