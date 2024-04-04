@@ -8,10 +8,10 @@
 
 /* Just want to see the borders temporarily */
 
-/* * {
+* {
     border: 1px solid #ddd;
     border-radius: 16px;
-} */
+}
 
 
 body {
@@ -62,7 +62,6 @@ a {
     justify-content: space-between;
     flex-direction: row;
     gap: 20px;
-
 }
 
 .heroleft   {
@@ -72,28 +71,28 @@ a {
 }
 
 .heroheader {
+    display: flex;
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
 }
 
 .herosubtext {
+    display: flex;
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.heroimage {
+#heroimage img {
     display: flex;
-    flex-wrap: wrap;
-    padding: 16px, 200px;
-}
-
-.heroimage, img {
-    max-height: 100%;
-    max-width: 100%;
+    height: auto;
+    width: auto;
+    min-height: 250px;
+    min-width: 500px;
 }
 
 button.signup    {
+    display: flex;
     cursor: pointer;
     padding: 10px 30px;
     border-radius: 8px;
@@ -101,6 +100,50 @@ button.signup    {
     color: #f9faf8;
     font-weight: bold;
 }
+ /* The following relate to the main information section */
 
+.information    {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
 
+.informationheader {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
 
+.informationimages  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 200px;
+    gap: 16px;
+}
+
+.imagecontent img {
+    display: flex;
+    border-radius: 25px;
+    border: 5px solid #3882F6;
+    min-height: auto;
+    min-width: auto;
+}
+
+.imagecontent   {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+}
+
+.infotext {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: #1f2937;
+    text-align: center;
+}
