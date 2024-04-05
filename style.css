@@ -3,15 +3,15 @@
 } */
 
 *   {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Just want to see the borders temporarily */
 
-* {
+/* * {
     border: 1px solid #ddd;
     border-radius: 16px;
-}
+} */
 
 
 body {
@@ -64,34 +64,49 @@ a {
     gap: 20px;
 }
 
+.herocontent    {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
 .heroleft   {
     display: flex;
+    flex: 1 2 auto;
     flex-direction: column;
-    gap: 16px;
+    justify-content: stretch;
 }
 
 .heroheader {
     display: flex;
+    flex-wrap: wrap;
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
+    padding: 5px 5px;
 }
 
 .herosubtext {
     display: flex;
+    flex-wrap: wrap;
     font-size: 18px;
     color: #E5E7EB;
+    padding: 5px 5px;
 }
 
 #heroimage img {
     display: flex;
+    flex: 2 1 auto;
+    width: 100%;
     height: auto;
-    width: auto;
-    min-height: 250px;
-    min-width: 500px;
 }
 
 button.signup    {
+    border-color: #3882F6;
+}
+
+button  {
     display: flex;
     cursor: pointer;
     padding: 10px 30px;
@@ -100,12 +115,14 @@ button.signup    {
     color: #f9faf8;
     font-weight: bold;
 }
+
  /* The following relate to the main information section */
 
 .information    {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
+    padding-bottom: 150px;
 }
 
 .informationheader {
@@ -120,17 +137,19 @@ button.signup    {
 .informationimages  {
     display: flex;
     flex-direction: row;
+    flex: 1 1 auto;
     justify-content: space-between;
     padding: 0 200px;
-    gap: 16px;
+    gap: 32px;
+    height: auto;
 }
 
 .imagecontent img {
     display: flex;
     border-radius: 25px;
     border: 5px solid #3882F6;
-    min-height: auto;
-    min-width: auto;
+    width: 100%;
+    height: auto;
 }
 
 .imagecontent   {
@@ -146,4 +165,53 @@ button.signup    {
     font-size: 18px;
     color: #1f2937;
     text-align: center;
+}
+
+/* The following section relates to the quote section */
+
+.quote  {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.quotetext  {
+    display: flex;
+    font-size: 36px;
+    font-weight: 100;
+    flex-wrap: wrap;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quoteauthor    {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: end;
+    color: #1f2937;
+}
+
+/* This section relates to the action section of the website */
+
+.action {
+    display: flex;
+    flex-direction: row;
+    margin: 75px 200px;
+    padding: 50px;
+
+
+    background-color: #3882F6;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.actionheading
+
+button #signupaction   {
+    border-color: #f9faf8;
 }
